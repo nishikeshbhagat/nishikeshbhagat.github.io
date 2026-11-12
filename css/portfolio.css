@@ -303,6 +303,41 @@ a { color: inherit; }
   max-width: 64ch;
 }
 
+/* Short overview first; the full write-up opens on demand */
+.project-body .summary {
+  font-size: clamp(17px, 1.5vw, 19px);
+  color: var(--text);
+}
+
+.full-story {
+  margin-top: 4px;
+}
+
+.full-story > summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  padding: 6px 0;
+}
+.full-story > summary::-webkit-details-marker { display: none; }
+.full-story > summary::after {
+  content: "+";
+  font-size: 15px;
+  line-height: 1;
+}
+.full-story[open] > summary::after { content: "−"; }
+.full-story > summary:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+.full-story[open] > summary { margin-bottom: 14px; }
+.full-story > p { color: var(--text-dim); }
+
 .project-visual {
   margin: 28px 0 18px;
   background: #000;
