@@ -207,6 +207,61 @@
       </article>
     </section>
 
+
+    <!-- ================= 04 · OBJECTS AND PRODUCT VISUALISATION ================= -->
+    <section class="group wrap" aria-labelledby="group-4">
+      <header class="group-head">
+        <span class="group-num">04</span>
+        <h2 id="group-4">Objects and product visualisation</h2>
+      </header>
+
+      <article class="project" id="blender-modelling">
+        <div class="project-head">
+          <h3>3D Modelling</h3>
+          <p class="one-line">Every object in the work above started as a Blender file.</p>
+        </div>
+        <div class="project-body">
+          <p class="summary">The monuments, the rescue tools, the props in the campus — I model them myself. Modelling for real time is a different discipline from modelling for a render: the budget is fixed before you start, and the question is always which detail survives being seen from thirty centimetres away on a headset.</p>
+          <details class="full-story">
+          <summary>Read the full story</summary>
+          <p>A model that lives in a headset has a frame budget. A model that lives in a browser has a download budget as well. Both are decided before the first vertex, and almost every modelling choice after that is about where to spend what is left.</p>
+          <p>So the method is to find the one feature that carries recognition and protect it. On the Taj Mahal it is the silhouette of the dome against the sky — get that right and a low-poly model reads correctly from across a room. On a hydraulic cutter it is the jaw geometry, because that is what a trainee looks at while deciding where to place it.</p>
+          <p>Everything else is texture rather than geometry. Baked normal and ambient occlusion maps carry detail that would otherwise cost polygons, which means the same asset can go into a Quest build, a WebXR scene and a high-resolution render without being rebuilt three times.</p>
+          <p>That single-source pipeline — Blender to glTF, one asset serving a headset, a browser and a still image — is the part I have spent the most time getting right.</p>
+          </details>
+          <dl class="meta">
+            <div><dt>My role</dt><dd>Solo</dd></div>
+            <div><dt>Tools</dt><dd>Blender, glTF, texture baking, PBR materials</dd></div>
+          </dl>
+          <!-- ARTSTATION: paste your profile link below once the renders are up, then delete this comment.
+               <p class="project-link"><a class="btn" href="https://www.artstation.com/YOUR_HANDLE">See the models on ArtStation ↗</a></p> -->
+        </div>
+      </article>
+
+      <article class="project" id="product-visualisation">
+        <div class="project-head">
+          <h3>Product Visualisation</h3>
+          <p class="one-line">Showing a product at its real size, in the room it is meant for.</p>
+        </div>
+        <div class="project-body">
+          <p class="summary">A photograph cannot tell you whether a chair fits your room or whether a finish looks right in your light. Placing a product in the customer's own space, at true scale, answers both in about four seconds — and it runs in a browser, so nobody has to install anything first.</p>
+          <details class="full-story">
+          <summary>Read the full story</summary>
+          <p>Online, the two questions that stop a purchase are almost always the same: how big is it really, and what does that material actually look like?</p>
+          <p>Product visualisation in AR answers the first question immediately. The model appears on the customer's own floor at the size it will be, next to furniture they already own. No comparison shot, no tape measure.</p>
+          <p>The second question is a materials problem rather than a modelling one. A finish that looks right under studio lighting can look plastic in a living room, so the materials have to behave sensibly under whatever light the phone finds, not just under the light I chose.</p>
+          <p>This is the same browser-based pipeline behind Seven Wonders: a glTF model, no app, a link that opens on any phone. What changes is the standard. A monument only has to feel impressive. A product has to be trusted enough that someone spends money on it.</p>
+          </details>
+          <dl class="meta">
+            <div><dt>My role</dt><dd>Solo</dd></div>
+            <div><dt>Tools</dt><dd>Blender, glTF, model-viewer, WebXR, PBR materials</dd></div>
+          </dl>
+          <!-- ADD WORK HERE: one or two renders or a live AR link make this section far stronger.
+               Until then it reads as a capability rather than a finished project. -->
+        </div>
+      </article>
+    </section>
+
     <!-- ================= SKILLS ================= -->
     <section class="skills wrap" id="skills" aria-labelledby="skills-title">
       <header class="group-head">
@@ -223,8 +278,12 @@
           <dd>JavaScript, WebGL, WebXR, MindAR</dd>
         </div>
         <div>
-          <dt>Making things to put in it</dt>
-          <dd>Blender, modelling, texturing, glTF pipeline</dd>
+          <dt>3D modelling</dt>
+          <dd>Blender, hard-surface and environment modelling, UV unwrapping, texture baking, PBR materials, glTF pipeline</dd>
+        </div>
+        <div>
+          <dt>Product visualisation</dt>
+          <dd>Real-time product models, true-scale AR placement, model-viewer, lighting and material setup, still renders</dd>
         </div>
         <div>
           <dt>Working</dt>
@@ -238,7 +297,7 @@
       <img class="portrait" src="images/profile-pic.png" alt="Portrait of Nishikesh Bhagat" width="600" height="600" loading="lazy" />
       <div class="contact-body">
         <h2 id="contact-title">Say hello.</h2>
-        <p>XR developer from Nagpur, now in Hyderabad. I design VR, AR and browser-based 3D for people meeting the technology for the first time — and I'm always glad to talk about the first minute of an experience.</p>
+        <p>XR developer from Nagpur, now in Hyderabad. I design VR, AR and browser-based 3D for people meeting the technology for the first time, and I model the objects that go inside it — and I'm always glad to talk about the first minute of an experience.</p>
         <div class="contact-actions">
           <a class="btn btn-primary" href="mailto:nishikeshbhagat12@gmail.com">nishikeshbhagat12@gmail.com</a>
           <a class="btn btn-ghost" href="https://drive.google.com/file/d/1A_fsubra2_zK2We8KEgeXDuCrtVjA5dO/view?usp=sharing" target="_blank" rel="noopener">Download CV <span aria-hidden="true">↗</span></a>
