@@ -1,631 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Nishikesh Bhagat Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nishikesh Bhagat — Worlds that need no instructions</title>
+  <meta name="description" content="Nishikesh Bhagat is an XR developer from Nagpur, working in Hyderabad, who designs immersive VR, AR and browser-based 3D work for people who have never worn a headset." />
+  <meta property="og:title" content="Nishikesh Bhagat — Worlds that need no instructions" />
+  <meta property="og:description" content="Immersive VR, AR and browser-based 3D work, designed for first-time users." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nishikeshbhagat.github.io/" />
+  <meta name="theme-color" content="#0f0e0c" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/portfolio.css" />
+</head>
+<body>
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+  <a class="skip-link" href="#work">Skip to work</a>
 
-    <link rel="stylesheet" href="css/aos.css">
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">Nishikesh Bhagat</a>
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+  <main id="top">
 
+    <!-- ================= HEADLINE + ABOUT ================= -->
+    <section class="hero wrap" aria-labelledby="headline">
+      <p class="eyebrow">XR developer · Nagpur → Hyderabad</p>
+      <h1 id="headline">Worlds that need no instructions.</h1>
+      <p class="hero-bio">
+        I'm Nishikesh, an XR developer from Nagpur, now working in Hyderabad. Most of
+        what I build is used by someone who has never put on a headset before — a student
+        touring a campus, a rescue worker learning a tool, a visitor pointing a phone at the floor.
+        That first minute is the part I design for: how long before they stop being nervous and
+        start exploring. I work in VR, AR and browser-based 3D, and I'm most interested in the
+        moment technology stops being noticeable.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://nishikeshbhagat.github.io/wondersby-nishikesh/" target="_blank" rel="noopener">
+          Try Seven Wonders in your browser <span aria-hidden="true">↗</span>
+        </a>
+        <a class="btn btn-ghost" href="#work">See the work <span aria-hidden="true">↓</span></a>
+      </div>
 
+      <!--
+        SHOWREEL — add it here once it's recorded, so it sits on the first screen.
+        Paste the embed in place of this comment, e.g. for YouTube:
 
-<style>
-
-/*======================================
-//--//-->   ABOUT
-======================================*/
-
-.about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
-
-.about-mf .about-img img {
-  margin-left: 10px;
-}
-
-
-.skill-mf .progress {
-  /* background-color: #cde1f8; */
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
-
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #ffbd39;
-}
-
-
-/* Animation styles */
-#typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(10, end) infinite;
-}
-
-#typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
-}
-
-
-/* project image zoom effect */
-
-.zoom-effect {
-  overflow: hidden;
-  transition: transform 0.3s ease-out;
-}
-
-.zoom-effect:hover {
-  transform: scale(1.1);
-}
-
-
-</style>
-
-
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Nishikesh Bhagat</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/profile.png);">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Nishikesh Bhagat</span></h1>
-
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
-
-						<script>
-
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
-
-						// Create an array of typing text
-						const typingTexts = [
-						'Engineering  ',
-						'Student  ',
-						'Information Technology   ',
-						];
-
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
-
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
-
-						<br>
-						<br>
-			            <h2>Aspiring Software Engineer &IT Student</h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			            <p><a href="https://www.linkedin.com/in/nishikesh-bhagat-115031235" class="btn btn-primary py-3 px-4">Linkdin</a> 
-							<a href="https://github.com/nishikeshbhagat?tab=repositories" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
-    </section>
-
-
-
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="images/profile-pic.png" class="img-fluid rounded b-shadow-a" alt="">
-									  </div>
-									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Nishikesh Bhagat</span></p>
-										<p><span class="title-s">Carrer Aspiration: </span> <span>Future Software Engineer &IT Student</span></p>
-										<p><span class="title-s">Internship: </span> <span>Subject Matter Expert Intern at Hazzten</span></p>
-										<p><span class="title-s">Location: </span> <span>Nagpur, India</span></p>
-									  </div>
-									</div>
-								  </div>
-
-								<div class="skill-mf">
-									<p class="title-s">Skills</p>
-									<span>Java</span> <span class="pull-right">75%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>PYTHON</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Web development</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>C</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>C++</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
-								
-								<p>I'm a third-year Information Technology student passionate about coding and problem-solving. Skilled in languages like C, C++, and Python, with hands-on experience in web development using HTML, CSS, and JavaScript. I've also volunteered at Support and Care Humanity Foundation and worked as a subject matter expert at Hazzten. Excited to apply my skills and learn more through internships and entry-level positions in software engineering.</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Objective:</span> <span>Seeking entry-level opportunities in Software Engineering.</span></li>
-									<li class="d-flex"><span>Interests:</span> <span>Software Development, Machine Learning, Web Design</span></li>
-									<li class="d-flex"><span>Education:</span> <span>B.Tech in Information Technology</span></li>
-									<li class="d-flex"><span>Language:</span> <span>English, Hindi, Marathi</span></li>	
-									<li class="d-flex"><span>Other Skills:</span> <span> Excel, Git</span></li>
-									<li class="d-flex"><span>Hobbies:</span> <span>Traveling, Photography, Cooking</span></li>
-									
-								</ul>
-							</div>
-						</div>
-
-
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="5">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p>
-								<p><a href="https://www.linkedin.com/in/nishikesh-bhagat-115031235" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-    </section>
-
-
-
-	
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Resume</h1>
-            <h2 class="mb-4">Resume</h2>
-            <p>Skilled Third-Year IT Student | Proficient in C, C++, Python, Software Development.</p>
+        <figure class="showreel">
+          <div class="showreel-frame">
+            <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID"
+                    title="Nishikesh Bhagat — showreel" loading="lazy"
+                    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+                    allowfullscreen></iframe>
           </div>
+          <figcaption>Showreel · 2026</figcaption>
+        </figure>
+      -->
+    </section>
+
+    <div id="work"></div>
+
+    <!-- ================= 01 · BUILT FOR FIRST-TIME USERS ================= -->
+    <section class="group wrap" aria-labelledby="group-1">
+      <header class="group-head">
+        <span class="group-num">01</span>
+        <h2 id="group-1">Built for first-time users</h2>
+      </header>
+
+      <article class="project" id="college-tour-vr">
+        <div class="project-head">
+          <h3>College Tour VR</h3>
+          <p class="one-line">A campus you can walk through from four hundred kilometres away.</p>
         </div>
+        <div class="project-body">
+          <p>Choosing a college in India often means committing to a place you have never stood in. Photographs flatten distance; a corridor looks the same length in every brochure.</p>
+          <p>This is that campus rebuilt so a prospective student can walk it before they ever arrive — down the corridors, into the labs, across the ground.</p>
+          <p>The design problem was not the modelling. It was that almost every user would be putting on a headset for the first time in their life. So the work went into the first sixty seconds: where you start, what you see when you turn around, and how long you are allowed to stand still before anything asks you to move.</p>
+          <p>I chose teleport movement over smooth locomotion, which costs some immersion but stops first-time users feeling sick. I kept the starting point outdoors and open, because beginning inside a narrow corridor made people freeze. And I deliberately did not add a guided tour — if the point is to decide whether you want to be in a place, being walked through it on rails defeats the purpose.</p>
+          <dl class="meta">
+            <div><dt>My role</dt><dd>Solo</dd></div>
+            <div><dt>Tools</dt><dd>Unity, Meta Quest, Blender</dd></div>
+          </dl>
+        </div>
+      </article>
 
-		<div class="row">
-			<h1 class="big-4">Internship</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-		<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2023-Present</span>
-						<h2>Hazzten</h2>
-						<span class="position">Subject Matter Expert</span>
-						<p class="mt-4">An E-Learning Company providing high-quality answers and guidance for school and college-level questions. Fully remote work environment
-							<ul>
-								<li>Provided expertise and guidance on subject matter topics related to school and college-level questions.</li>
-								<li>Organized and structured data in Excel spreadsheets for easy accessibility and analysis.</li>
-								<li>Collaborated with content creators to develop educational materials and resources.</li>
-							</ul>
-						</p>
-					</div>
-
-				</div>
-
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">April 12, 2023 - April 19, 2023</span>
-						<h2>Support and Care Humanity Foundation (Internship)</h2>
-						<span class="position">Volunteer</span>
-						<p class="mt-4">A nonprofit organization based in Greater Noida, Uttar Pradesh, providing food, legal, and medical assistance while empowering underprivileged individuals.
-							<ul>
-								<li>Collaborated on initiatives to uplift marginalized communities.</li>
-								<li>Contributed to fundraising and outreach programs.</li>
-								
-
-<li>Improved empathy and communication through diverse interactions.</li>
-								
-							</ul>
-						</p>
-					</div>
-
-				</div>
-			</div>
-
-		<br>
-		<br>
-
-		<div class="row">
-			<h1 class="big-4">Education</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-			<div class="row">
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2021-Present</span>
-    					<h2>Bachelor of Engineering</h2>
-    					<span class="position">St Vincent Pallotti College of Engineering &Technology, Nagpur</span>
-    					<p class="mt-4">Grade: First class distinction.</p>
-    				</div>
-    			</div>
-
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2020-2021</span>
-    					<h2>Higher Secondary School</h2>
-    					<span class="position">Dr M K Ummathe junior College Bhamti, Ring Road,  Nagpur</span>
-    					<p class="mt-4">Grade: First class distinction.</p>
-    				</div>
-				</div>
-    		</div>
-
-    		<div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="https://drive.google.com/file/d/1A_fsubra2_zK2We8KEgeXDuCrtVjA5dO/view?usp=sharing" class="btn btn-primary py-4 px-5">Download Resume</a></p>
-    			</div>
-    		</div>
-    	</div>
+      <article class="project project-feature" id="seven-wonders">
+        <div class="project-head">
+          <h3>Seven Wonders WebAR</h3>
+          <p class="one-line">Seven wonders of the world, standing in your room, with nothing to install.</p>
+          <figure class="project-visual">
+            <img src="images/seven-wonders-taj-mahal.jpg" alt="The Taj Mahal model from Seven Wonders WebAR" width="633" height="640" loading="lazy" />
+          </figure>
+          <a class="btn btn-primary btn-block" href="https://nishikeshbhagat.github.io/wondersby-nishikesh/" target="_blank" rel="noopener">
+            Try it now <span aria-hidden="true">↗</span>
+          </a>
+          <p class="try-note">Opens in your phone's browser. No app, no headset.</p>
+        </div>
+        <div class="project-body">
+          <p>Most augmented reality asks for a download first. For a child, that means asking a parent for the phone, the password, and permission — three obstacles before anything appears.</p>
+          <p>This runs in a browser. You open a link, point your phone at the floor, and the Taj Mahal is standing in the room in front of you.</p>
+          <p>Working without an app imposes real limits. Everything has to be small enough to load over a phone connection, and browser tracking is less stable than a native app. So the models are kept light and the scenes simple: nothing that would push the file size up or the frame rate down. And the monument only appears once the floor has been found, so nobody ever sees it floating in mid-air.</p>
+          <p>That constraint turned out to be the right one. The thing people remember is scale — a monument sitting in a room at the wrong size — and scale survives a low-poly model perfectly well.</p>
+          <dl class="meta">
+            <div><dt>My role</dt><dd>Solo</dd></div>
+            <div><dt>Tools</dt><dd>JavaScript, WebXR, Apple Quick Look, model-viewer, Blender</dd></div>
+          </dl>
+        </div>
+      </article>
     </section>
 
-   
+    <!-- ================= 02 · TRAINING AND HIGH-STAKES WORK ================= -->
+    <section class="group wrap" aria-labelledby="group-2">
+      <header class="group-head">
+        <span class="group-num">02</span>
+        <h2 id="group-2">Training and high-stakes work</h2>
+      </header>
 
-    <section class="ftco-section" id="project-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Projects</h2>
-            <p>Below are the sample Web development projects with HTML, CSS, Javascript.</p>
-          </div>
+      <article class="project" id="weber-rescue">
+        <div class="project-head">
+          <h3>Weber Rescue</h3>
+          <p class="one-line">Training for the tools that cut a car open, without cutting a car open.</p>
+          <p class="status-chip">Delivered · under client review</p>
         </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/nishikeshbhagat/simple-calculator/blob/main/calculator.html" class="block-20 zoom-effect" style="background-image: url('images/calculator-thumbnail.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/nishikeshbhagat/simple-calculator.git" target="_blank">Simple Calculator</a></h3>
-                <p>This is a simple calculator built using HTML, CSS, and JavaScript.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/nishikeshbhagat/To-Do_list/blob/main/todolist.html" class="block-20 zoom-effect" style="background-image: url('images/to-do-list-thumbnail.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/nishikeshbhagat/To-Do_list.git" target="_blank">To-Do list</a></h3>
-                <p>A to-do list application created with HTML, CSS, and JavaScript to keep track of tasks.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="https://github.com/nishikeshbhagat/Guess-Number/blob/main/task4.1.html" class="block-20 zoom-effect" style="background-image: url('images/gueesing-game.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/nishikeshbhagat/Guess-Number.git" target="_blank">Guess the Number Game</a></h3>
-                <p>A fun game where the user tries to guess a random number. Developed with HTML, CSS, and JavaScript.</p>
-              </div>
-            </div>
-          </div>
+        <div class="project-body">
+          <p>Weber Rescue makes hydraulic cutters and spreaders — the equipment used to open a vehicle after a crash. Training on them is expensive and genuinely dangerous: you need a scrap car, a closed site, and a supervisor for every trainee.</p>
+          <p>I found this client myself and approached them directly with a proposal to move part of that training into VR.</p>
+          <p>The hard part was restraint. A rescue simulation in VR can easily become a game about cutting things up. But the people using this are learning a procedure where the order of operations is the whole point — stabilise before you cut, and know what is behind the panel you are about to breach.</p>
+          <p>So the tool behaves correctly and the sequence is enforced. You cannot skip ahead to the satisfying part. That is a worse game and a better training environment, and choosing the second was the central decision of the project.</p>
+          <p>Delivered and currently under client review.</p>
+          <dl class="meta">
+            <div><dt>My role</dt><dd>Solo developer. Client sourced, pitched and delivered independently.</dd></div>
+            <div><dt>Tools</dt><dd>Unity, Blender</dd></div>
+          </dl>
         </div>
-	<br>
-		<!-- added justify-content-center to center align the last two projects -->
-		<div class="row d-flex justify-content-center">  
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/nishikeshbhagat/Pig-dice-Game/blob/main/task5pig.html" class="block-20 zoom-effect" style="background-image: url('images/pig-game.png');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/nishikeshbhagat/Pig-dice-Game.git" target="_blank">Pig Game</a></h3>
-				  <p>A multiplayer dice game built using HTML, CSS, and JavaScript.</p>
-				</div>
-			  </div>
-			</div>
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/nishikeshbhagat/E-commerce/blob/main/about.html" class="block-20 zoom-effect" style="background-image: url('images/ecommerce-thumbnail.png');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="github-button" href="https://github.com/nishikeshbhagat/E-commerce.git" target="_blank">E-Commerce Website</a></h3>
-				  <p>A fully functional E-Commerce website with product listings, shopping cart, and checkout features. Developed using HTML, CSS, JavaScript, and backend technologies.</p>
-				</div>
-			  </div>
-			</div>
-		 </div>
-	  </div>
+      </article>
     </section>
 
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-      <div class="container">
-		<div class="row d-md-flex align-items-center">
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="2">0</strong>
-                <span>Achievements</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="2">0</strong>
-                <span>Internship</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="4">0</strong>
-                <span>Programming Languages Known</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="5">0</strong>
-                <span>Projects</span>
-              </div>
-            </div>
-          </div>
+    <!-- ================= 03 · INTERACTION EXPERIMENTS ================= -->
+    <section class="group wrap" aria-labelledby="group-3">
+      <header class="group-head">
+        <span class="group-num">03</span>
+        <h2 id="group-3">Interaction experiments</h2>
+      </header>
+
+      <article class="project" id="hand-tracking-mr-vr">
+        <div class="project-head">
+          <h3>Hand Tracking / MR to VR</h3>
+          <p class="one-line">Putting the controllers down, and letting the room disappear.</p>
+        </div>
+        <div class="project-body">
+          <p>Two experiments that turned out to be the same question: how much of the equipment can you remove before the experience breaks?</p>
+          <p>The first drops the controllers. Your own hands do the work — reaching, grabbing, pushing. Hand tracking is less precise than a controller, so anything requiring fine aim had to go. What is left is slower and more deliberate, and people stop thinking about their hands within about thirty seconds, which a controller never quite allows.</p>
+          <p>The second removes the room. You start in mixed reality, seeing the actual space you are standing in, and it fades gradually into a virtual one. No loading screen, no cut to black.</p>
+          <p>The transition speed was the entire design problem. Fast feels like a trick and makes people flinch. Slow enough and they do not notice it happening, which is the point: you want someone to arrive somewhere else without ever having left.</p>
+          <dl class="meta">
+            <div><dt>My role</dt><dd>Solo</dd></div>
+            <div><dt>Tools</dt><dd>Unity, Meta Quest passthrough, hand tracking</dd></div>
+          </dl>
+        </div>
+      </article>
+
+      <article class="project" id="vr-shooting-range">
+        <div class="project-head">
+          <h3>VR Shooting Game</h3>
+          <p class="one-line">A shooting range that teaches your hands without telling them anything.</p>
+        </div>
+        <div class="project-body">
+          <p>A range with no tutorial, no text prompts and no onboarding sequence. You pick up the weapon and the weight of it tells you how to hold it.</p>
+          <p>The rule I set myself was that nothing could be explained in words. If a player did not understand something, that was a failure of the object, not of the instructions — so the fix was always to change how the thing felt rather than to add a label.</p>
+          <p>It is the smallest project here and the one that taught me most about physical feedback. Reloading, recoil and the moment of picking a weapon up are all doing the work that a tutorial would otherwise do.</p>
+          <dl class="meta">
+            <div><dt>My role</dt><dd>Solo</dd></div>
+            <div><dt>Tools</dt><dd>Unity, Meta Quest</dd></div>
+          </dl>
+        </div>
+      </article>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="skills wrap" id="skills" aria-labelledby="skills-title">
+      <header class="group-head">
+        <span class="group-num">—</span>
+        <h2 id="skills-title">Skills</h2>
+      </header>
+      <dl class="skill-list">
+        <div>
+          <dt>Building immersive work</dt>
+          <dd>Unity, Unreal Engine, Meta Quest SDK, hand tracking, passthrough / mixed reality</dd>
+        </div>
+        <div>
+          <dt>Browser-based 3D</dt>
+          <dd>JavaScript, WebGL, WebXR, MindAR</dd>
+        </div>
+        <div>
+          <dt>Making things to put in it</dt>
+          <dd>Blender, modelling, texturing, glTF pipeline</dd>
+        </div>
+        <div>
+          <dt>Working</dt>
+          <dd>C#, Git, client communication, scoping and delivery</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- ================= ABOUT / CONTACT ================= -->
+    <section class="contact wrap" id="contact" aria-labelledby="contact-title">
+      <img class="portrait" src="images/profile-pic.png" alt="Portrait of Nishikesh Bhagat" width="600" height="600" loading="lazy" />
+      <div class="contact-body">
+        <h2 id="contact-title">Say hello.</h2>
+        <p>XR developer from Nagpur, now in Hyderabad. I design VR, AR and browser-based 3D for people meeting the technology for the first time — and I'm always glad to talk about the first minute of an experience.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:nishikeshbhagat12@gmail.com">nishikeshbhagat12@gmail.com</a>
+          <a class="btn btn-ghost" href="https://drive.google.com/file/d/1A_fsubra2_zK2We8KEgeXDuCrtVjA5dO/view?usp=sharing" target="_blank" rel="noopener">Download CV <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/nishikesh-bhagat-115031235" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-	
-	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			<!-- <div class="container"> -->
-				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>More projects on<span> Github  </span> </h2>
-						
-						<br>
-						<p><a href="https://github.com/nishikeshbhagat?tab=repositories" class="btn btn-primary py-3 px-5">GitHub</a></p>
-						</div>
-					</div>
-				</div>
-			<!-- </div> -->
-		</div>
-	</section>
+    </section>
 
+  </main>
 
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year">2026</span> Nishikesh Bhagat</span>
+      <a href="https://github.com/nishikeshbhagat" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </footer>
 
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-      <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Below are the details to reach out to me!</p>
-          </div>
-        </div>
-
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div>
-          		<h3 class="mb-4">Address</h3>
-	            <p>Nagpur, India</p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone2"></span>
-          		</div>
-          		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://0101010101">+91 9730650923</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-paper-plane"></span>
-          		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:nishikeshbhagat12@gmail.com">nishikeshbhagat12@gmail.com</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="https://drive.google.com/file/d/1A_fsubra2_zK2We8KEgeXDuCrtVjA5dO/view?usp=sharing">resumelink</a></p>
-	          </div>
-          </div>
-
-		  <div class="container">
-			<br>
-			
-				<br>
-					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/nishikesh-bhagat-115031235"><span class="icon-linkedin"></span></a></li>  
-					  
-					  
-				      <li class="ftco-animate"><a href="https://www.instagram.com/always_nishikesh_/"><span class="icon-instagram"></span></a></li>
-
-					<li class="ftco-animate"><a href="https://github.com/nishikeshbhagat?tab=repositories"><span class="icon-github"></span></a></li>
-
-					<li class="ftco-animate"><a href="mailto:nishikeshbhagat12@gmail.com"><span class="icon-telegram"></span></a></li>
-					</ul>
-				<br>
-		   </div>
-   </div>
- </section>
-
-
- 
-	
-    <footer class="ftco-footer ftco-section">
-		<div class="container">
-		  <div class="row">
-			<div class="col-md-12 text-center">
-  
-			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			</div>
-		  </div>
-		</div>
-	  </footer>
-
-
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  
-  <script src="js/main.js"></script>
-    
-  </body>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
